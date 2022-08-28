@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rick y Morty</title>
+  </head>
+  <body>
+    <!-------------------------- Barra de navegación ------------------------------------>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!" id="filtro-female" class="black-text">Female</a></li>
+      <li><a href="#!" id="filtro-male" class="black-text">Male</a></li>
+      <li><a href="#!" id="filtro-other" class="black-text">Other</a></li>
+    </ul>
+    <nav class="black">
+      <div class="nav-wrapper">
+        <div>
+          <a href="#!" class="brand-logo nav-logo">
+            <!-- Rick and Morty -->
+            <img src="Rick-and-Morty.png" alt="" class="imagen-logo" />
+          </a>
+        </div>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Gender<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-------------------------- Contenido main, tarjetas ------------------------------------>
+    <div class="container-fluid">
+      <div id="contenedor-personajes" class="row"></div>
+    </div>
+    <!-------------------------- Footer ------------------------------------>
+    <footer class="page-footer black">
+      <div class="footer-copyright">
+        <div class="container">© 2022 Leila Peña</div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
