@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -18,6 +19,7 @@
   <body>
     <!-------------------------- Barra de navegación ------------------------------------>
     <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!" id="filtro-all" class="black-text">All</a></li>
       <li><a href="#!" id="filtro-female" class="black-text">Female</a></li>
       <li><a href="#!" id="filtro-male" class="black-text">Male</a></li>
       <li><a href="#!" id="filtro-other" class="black-text">Other</a></li>
@@ -41,7 +43,50 @@
     </nav>
     <!-------------------------- Contenido main, tarjetas ------------------------------------>
     <div class="container-fluid">
+      <div id="contenedor-loader" class="contenedor-loader">
+      <span class="loader"></span>
+    </div>
       <div id="contenedor-personajes" class="row"></div>
+    </div>
+    <!------------------------------------ Paginador ----------------------------------------->
+    <div class="container-paginador">
+      <p>Pagina Actual: <span id="pagina-actual"></span></p>
+      <span>Total de paginas: <span id="total-paginas"></span></span>
+    </div>
+
+    <div class="pagination">
+      <button
+        type="button"
+        id="first-page"
+        class="first-page pagination-button"
+        aria-label="Página previa"
+      >
+        <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+      </button>
+      <button
+        type="button"
+        id="previous-page"
+        class="previous-page pagination-button"
+        aria-label="Página Anterior"
+      >
+        <i class="fas fa-angle-left" aria-hidden="true"></i>
+      </button>
+      <button
+        type="button"
+        id="next-page"
+        class="next-page pagination-button"
+        aria-label="Siguiente Página"
+      >
+        <i class="fas fa-angle-right" aria-hidden="true"></i>
+      </button>
+      <button
+        type="button"
+        id="last-page"
+        class="last-page pagination-button"
+        aria-label="Última página"
+      >
+        <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+      </button>
     </div>
     <!-------------------------- Footer ------------------------------------>
     <footer class="page-footer black">
